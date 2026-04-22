@@ -1,0 +1,15 @@
+2026-04-10 08:20:51,183 | INFO | ==================================================
+2026-04-10 08:20:51,183 | INFO |   ETL PIPELINE STARTED
+2026-04-10 08:20:51,183 | INFO | ==================================================
+2026-04-10 08:20:51,183 | INFO | --- STEP 1: EXTRACT ---
+2026-04-10 08:20:51,183 | INFO | [EXTRACT] Reading file: data/superstore.csv
+2026-04-10 08:20:51,185 | INFO | [EXTRACT] Success — 50 rows, 16 columns loaded
+2026-04-10 08:20:51,185 | INFO | --- STEP 2: TRANSFORM ---
+2026-04-10 08:20:51,185 | INFO | [TRANSFORM] Starting with 50 rows
+2026-04-10 08:20:51,193 | INFO | [TRANSFORM] Done — 50 clean rows ready
+2026-04-10 08:20:51,193 | INFO | --- STEP 3: LOAD ---
+2026-04-10 08:20:51,241 | INFO | [LOAD] SQLite → output/sales.db | Rows: 50
+2026-04-10 08:20:51,243 | INFO | [LOAD] CSV → output/clean_sales.csv
+2026-04-10 08:20:51,243 | INFO | ==================================================
+2026-04-10 08:20:51,243 | INFO |   PIPELINE COMPLETE | Rows: 50 | Time: 0.06s
+2026-04-10 08:20:51,243 | INFO | ==================================================

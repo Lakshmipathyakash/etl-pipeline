@@ -1,0 +1,44 @@
+2026-04-19 17:14:12,904 | INFO | Pipeline started | source=all | mode=full
+2026-04-19 17:14:12,904 | INFO | Extracting | source=all | mode=full
+2026-04-19 17:19:02,624 | INFO | Pipeline started | source=all | mode=full
+2026-04-19 17:19:02,624 | INFO | Extracting | source=all | mode=full
+2026-04-19 17:36:58,966 | INFO | Pipeline started | source=all | mode=full
+2026-04-19 17:36:58,966 | INFO | Extracting | source=all | mode=full
+2026-04-19 17:36:58,981 | INFO | Sales transformed: 50 rows
+2026-04-19 17:36:58,982 | INFO | Returns transformed: 20 rows
+2026-04-19 17:36:58,995 | INFO | Loaded 50 sales rows to DB + CSV
+2026-04-19 17:36:59,000 | INFO | Loaded 20 returns rows to DB + CSV
+2026-04-19 17:36:59,000 | INFO | Pipeline completed successfully
+2026-04-19 17:37:43,833 | INFO | Pipeline started | source=returns | mode=full
+2026-04-19 17:37:43,833 | INFO | Extracting | source=returns | mode=full
+2026-04-19 17:37:43,837 | INFO | Sales: no new rows to transform
+2026-04-19 17:37:43,839 | INFO | Returns transformed: 20 rows
+2026-04-19 17:37:43,847 | INFO | Loaded 20 returns rows to DB + CSV
+2026-04-19 17:37:43,847 | INFO | Pipeline completed successfully
+2026-04-19 17:37:57,766 | INFO | Pipeline started | source=returns | mode=full
+2026-04-19 17:37:57,767 | INFO | Extracting | source=returns | mode=full
+2026-04-19 17:37:57,770 | INFO | Sales: no new rows to transform
+2026-04-19 17:37:57,772 | INFO | Returns transformed: 20 rows
+2026-04-19 17:37:57,778 | INFO | Loaded 20 returns rows to DB + CSV
+2026-04-19 17:37:57,778 | INFO | Pipeline completed successfully
+2026-04-19 17:38:23,382 | INFO | Pipeline started | source=all | mode=incremental
+2026-04-19 17:38:23,383 | INFO | Extracting | source=all | mode=incremental
+2026-04-19 17:38:23,395 | INFO | Incremental: sales rows after 2026-04-19 17:37:57 = 0
+2026-04-19 17:38:23,398 | INFO | Incremental: returns rows after 2026-04-19 17:37:57 = 0
+2026-04-19 17:38:23,398 | INFO | Sales: no new rows to transform
+2026-04-19 17:38:23,398 | INFO | Returns: no new rows to transform
+2026-04-19 17:38:23,398 | INFO | Pipeline completed successfully
+2026-04-19 17:42:00,997 | INFO | Pipeline started | source=all | mode=incremental
+2026-04-19 17:42:00,997 | INFO | Extracting | source=all | mode=incremental
+2026-04-19 17:42:01,002 | INFO | Incremental: sales rows after 2026-04-19 17:38:23 = 0
+2026-04-19 17:42:01,004 | INFO | Incremental: returns rows after 2026-04-19 17:38:23 = 0
+2026-04-19 17:42:01,004 | INFO | Sales: no new rows to transform
+2026-04-19 17:42:01,004 | INFO | Returns: no new rows to transform
+2026-04-19 17:42:01,005 | INFO | Pipeline completed successfully
+2026-04-19 17:44:00,994 | INFO | Pipeline started | source=all | mode=incremental
+2026-04-19 17:44:00,994 | INFO | Extracting | source=all | mode=incremental
+2026-04-19 17:44:01,000 | INFO | Incremental: sales rows after 2026-04-19 17:42:01 = 0
+2026-04-19 17:44:01,002 | INFO | Incremental: returns rows after 2026-04-19 17:42:01 = 0
+2026-04-19 17:44:01,002 | INFO | Sales: no new rows to transform
+2026-04-19 17:44:01,002 | INFO | Returns: no new rows to transform
+2026-04-19 17:44:01,003 | INFO | Pipeline completed successfully

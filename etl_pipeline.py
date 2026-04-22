@@ -1,0 +1,110 @@
+import argparse
+import pandas as pd
+import sqlite3
+import os
+import logging
+from datetime import datetime
+
+LOG_DIR = "logs"
+DATA_DIR = "data"
+OUTPUT_DIR = "output"
+DB_PATH = os.path.join(OUTPUT_DIR, "etl.db")
+LAST_RUN_FILE = "last_run.txt"
+
+os.makedirs(LOG_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+logging.basicConfig(
+    filename=os.path.join(LOG_DIR, "etl.log"),
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
+def get_last_run():
+    if os.path.exists(LAST_RUN_FILE):
+        with open(LAST_RUN_FILE, "r") as f:
+            return f.read().strip()
+    return None
+
+def save_last_run():
+    with open(LAST_RUN_FILE, "w") as f:
+        f.write(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
+def extract(source, mode):
+    logging.info(f"Extracting | source={source} | mode={mode}")
+    if source in ("sales", "all"):
+        sales_df = pd.read_csv(os.path.join(DATA_DIR, "superstore.csv"))
+        sales_df.columns = sales_df.columns.str.strip().str.lower().str.replace(" ", "_")
+        sales_df["order_date"] = pd.to_datetime(sales_df["order_date"])
+        if mode == "incremental":
+            last = get_last_run()
+            if last:
+                sales_df = sales_df[sales_df["order_date"] > pd.to_datetime(last)]
+                logging.info(f"Incremental: sales rows after {last} = {len(sales_df)}")
+    else:
+        sales_df = pd.DataFrame()
+    if source in ("returns", "all"):
+        returns_df = pd.read_csv(os.path.join(DATA_DIR, "product_returns.csv"))
+        returns_df.columns = returns_df.columns.str.strip().str.lower().str.replace(" ", "_")
+        returns_df["return_date"] = pd.to_datetime(returns_df["return_date"])
+        if mode == "incremental":
+            last = get_last_run()
+            if last:
+                returns_df = returns_df[returns_df["return_date"] > pd.to_datetime(last)]
+                logging.info(f"Incremental: returns rows after {last} = {len(returns_df)}")
+    else:
+        returns_df = pd.DataFrame()
+    return sales_df, returns_df
+
+def transform_sales(df):
+    if df.empty:
+        logging.info("Sales: no new rows to transform")
+        return df
+    df = df.copy()
+    df["revenue"] = df["sales"]
+    df["month"] = df["order_date"].dt.month
+    df["year"] = df["order_date"].dt.year
+    df.drop_duplicates(inplace=True)
+    logging.info(f"Sales transformed: {len(df)} rows")
+    return df
+
+def transform_returns(df):
+    if df.empty:
+        logging.info("Returns: no new rows to transform")
+        return df
+    df = df.copy()
+    df["month"] = df["return_date"].dt.month
+    df["year"] = df["return_date"].dt.year
+    df.drop_duplicates(inplace=True)
+    logging.info(f"Returns transformed: {len(df)} rows")
+    return df
+
+def load(sales_df, returns_df):
+    conn = sqlite3.connect(DB_PATH)
+    if not sales_df.empty:
+        sales_df.to_sql("sales", conn, if_exists="append", index=False)
+        sales_df.to_csv(os.path.join(OUTPUT_DIR, "sales_output.csv"), index=False)
+        logging.info(f"Loaded {len(sales_df)} sales rows to DB + CSV")
+    if not returns_df.empty:
+        returns_df.to_sql("product_returns", conn, if_exists="append", index=False)
+        returns_df.to_csv(os.path.join(OUTPUT_DIR, "returns_output.csv"), index=False)
+        logging.info(f"Loaded {len(returns_df)} returns rows to DB + CSV")
+    conn.close()
+
+def main():
+    parser = argparse.ArgumentParser(description="ETL Pipeline")
+    parser.add_argument("--source", choices=["sales", "returns", "all"], default="all")
+    parser.add_argument("--mode", choices=["full", "incremental"], default="full")
+    args = parser.parse_args()
+    print(f"\n🚀 Starting ETL | source={args.source} | mode={args.mode}\n")
+    logging.info(f"Pipeline started | source={args.source} | mode={args.mode}")
+    sales_df, returns_df = extract(args.source, args.mode)
+    sales_df = transform_sales(sales_df)
+    returns_df = transform_returns(returns_df)
+    load(sales_df, returns_df)
+    save_last_run()
+    print("✅ ETL complete! Check output/ and logs/")
+    logging.info("Pipeline completed successfully")
+
+if __name__ == "__main__":
+    main()

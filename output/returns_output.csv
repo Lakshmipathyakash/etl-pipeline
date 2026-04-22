@@ -1,0 +1,21 @@
+return_id,order_id,product,category,return_date,reason,refund_amount,region,month,year
+R001,ORD101,Laptop,Electronics,2024-01-03,Defective,45000,South,1,2024
+R002,ORD102,Kurta,Clothing,2024-01-05,Wrong Size,800,North,1,2024
+R003,ORD103,Rice Cooker,Kitchen,2024-01-07,Not as Described,1500,West,1,2024
+R004,ORD104,Mobile,Electronics,2024-01-10,Defective,18000,East,1,2024
+R005,ORD105,Saree,Clothing,2024-01-12,Wrong Size,1200,South,1,2024
+R006,ORD106,Mixer,Kitchen,2024-01-15,Damaged,2200,North,1,2024
+R007,ORD107,Headphones,Electronics,2024-01-18,Defective,3500,West,1,2024
+R008,ORD108,Jeans,Clothing,2024-01-20,Wrong Size,950,East,1,2024
+R009,ORD109,Pressure Cooker,Kitchen,2024-01-22,Not as Described,1800,South,1,2024
+R010,ORD110,Tablet,Electronics,2024-01-25,Defective,22000,North,1,2024
+R011,ORD111,Shirt,Clothing,2024-02-01,Wrong Color,700,West,2,2024
+R012,ORD112,Blender,Kitchen,2024-02-03,Defective,1300,East,2,2024
+R013,ORD113,Smartwatch,Electronics,2024-02-05,Defective,8500,South,2,2024
+R014,ORD114,Lehenga,Clothing,2024-02-08,Wrong Size,3200,North,2,2024
+R015,ORD115,Toaster,Kitchen,2024-02-10,Damaged,900,West,2,2024
+R016,ORD116,Earbuds,Electronics,2024-02-12,Defective,2100,East,2,2024
+R017,ORD117,Kurta,Clothing,2024-02-15,Wrong Color,850,South,2,2024
+R018,ORD118,Air Fryer,Kitchen,2024-02-18,Not as Described,4500,North,2,2024
+R019,ORD119,Camera,Electronics,2024-02-20,Defective,35000,West,2,2024
+R020,ORD120,Saree,Clothing,2024-02-22,Wrong Size,1400,East,2,2024

@@ -1,0 +1,51 @@
+order_id,order_date,ship_date,ship_mode,customer_name,segment,city,state,region,category,sub-category,product_name,sales,quantity,discount,profit,revenue,month,year
+ORD-2024-001,2024-01-03,2024-01-07,Second Class,John Smith,Consumer,Chennai,Tamil Nadu,South,Technology,Phones,Samsung Galaxy S23,850.0,1,0.0,255.0,850.0,1,2024
+ORD-2024-002,2024-01-04,2024-01-08,Standard Class,Priya Sharma,Corporate,Mumbai,Maharashtra,West,Furniture,Chairs,Office Executive Chair,450.0,2,0.1,90.0,450.0,1,2024
+ORD-2024-003,2024-01-05,2024-01-09,First Class,Rahul Verma,Consumer,Delhi,Delhi,North,Office Supplies,Binders,Heavy Duty Binder Pack,120.0,5,0.0,48.0,120.0,1,2024
+ORD-2024-004,2024-01-06,2024-01-10,Second Class,Anjali Das,Consumer,Bengaluru,Karnataka,South,Technology,Laptops,HP Pavilion 15,1200.0,1,0.05,360.0,1200.0,1,2024
+ORD-2024-005,2024-01-07,2024-01-12,Standard Class,Vikram Nair,Home Office,Hyderabad,Telangana,South,Furniture,Tables,Wooden Study Table,320.0,1,0.2,-40.0,320.0,1,2024
+ORD-2024-006,2024-01-08,2024-01-11,First Class,Sneha Patel,Corporate,Pune,Maharashtra,West,Office Supplies,Paper,A4 Printer Paper 500 Sheets,85.0,10,0.0,34.0,85.0,1,2024
+ORD-2024-007,2024-01-09,2024-01-13,Standard Class,Arjun Reddy,Consumer,Chennai,Tamil Nadu,South,Technology,Accessories,Logitech Wireless Mouse,250.0,2,0.0,87.5,250.0,1,2024
+ORD-2024-008,2024-01-10,2024-01-14,Second Class,Kavya Menon,Corporate,Kochi,Kerala,South,Furniture,Bookcases,5-Shelf Wooden Bookcase,560.0,1,0.1,112.0,560.0,1,2024
+ORD-2024-009,2024-01-11,2024-01-15,Standard Class,Ravi Kumar,Consumer,Jaipur,Rajasthan,North,Office Supplies,Storage,Plastic Storage Box Set,95.0,3,0.0,28.5,95.0,1,2024
+ORD-2024-010,2024-01-12,2024-01-16,First Class,Deepika Singh,Home Office,Mumbai,Maharashtra,West,Technology,Monitors,Dell 27 inch IPS Monitor,980.0,1,0.0,294.0,980.0,1,2024
+ORD-2024-011,2024-01-13,2024-01-17,Standard Class,Suresh Babu,Consumer,Coimbatore,Tamil Nadu,South,Furniture,Chairs,Ergonomic Mesh Chair,380.0,2,0.15,57.0,380.0,1,2024
+ORD-2024-012,2024-01-14,2024-01-18,Second Class,Meena Iyer,Corporate,Bengaluru,Karnataka,South,Office Supplies,Binders,Clear View Binder,45.0,8,0.0,18.0,45.0,1,2024
+ORD-2024-013,2024-01-15,2024-01-19,First Class,Arun Krishnan,Consumer,Ahmedabad,Gujarat,West,Technology,Phones,iPhone 15 Pro,1500.0,1,0.0,450.0,1500.0,1,2024
+ORD-2024-014,2024-01-16,2024-01-20,Standard Class,Pooja Mehta,Home Office,Lucknow,Uttar Pradesh,North,Furniture,Tables,Glass Coffee Table,275.0,1,0.2,-30.0,275.0,1,2024
+ORD-2024-015,2024-01-17,2024-01-21,Second Class,Nikhil Joshi,Consumer,Nagpur,Maharashtra,West,Office Supplies,Paper,Sticky Notes Bulk Pack,60.0,6,0.0,24.0,60.0,1,2024
+ORD-2024-016,2024-01-18,2024-01-22,First Class,Lakshmi Rao,Corporate,Hyderabad,Telangana,South,Technology,Laptops,Lenovo ThinkPad E15,1350.0,1,0.05,405.0,1350.0,1,2024
+ORD-2024-017,2024-01-19,2024-01-23,Standard Class,Kartik Gupta,Consumer,Chandigarh,Punjab,North,Furniture,Chairs,Plastic Stackable Chair,180.0,4,0.0,54.0,180.0,1,2024
+ORD-2024-018,2024-01-20,2024-01-24,Second Class,Asha Pillai,Home Office,Thiruvananthapuram,Kerala,South,Office Supplies,Storage,Metal File Cabinet,420.0,1,0.1,84.0,420.0,1,2024
+ORD-2024-019,2024-01-21,2024-01-25,Standard Class,Mohan Das,Consumer,Kolkata,West Bengal,East,Technology,Accessories,HP Wireless Keyboard,175.0,2,0.0,61.25,175.0,1,2024
+ORD-2024-020,2024-01-22,2024-01-26,First Class,Divya Nambiar,Corporate,Chennai,Tamil Nadu,South,Furniture,Bookcases,Wall Mounted Bookshelf,310.0,1,0.0,93.0,310.0,1,2024
+ORD-2024-021,2024-01-23,2024-01-27,Standard Class,Sanjay Tiwari,Consumer,Bhopal,Madhya Pradesh,Central,Office Supplies,Binders,Lever Arch File,35.0,12,0.0,14.0,35.0,1,2024
+ORD-2024-022,2024-01-24,2024-01-28,Second Class,Rekha Pillai,Consumer,Madurai,Tamil Nadu,South,Technology,Phones,OnePlus Nord 3,650.0,1,0.0,195.0,650.0,1,2024
+ORD-2024-023,2024-01-25,2024-01-29,First Class,Anand Sharma,Corporate,Delhi,Delhi,North,Furniture,Tables,Adjustable Standing Desk,750.0,1,0.05,187.5,750.0,1,2024
+ORD-2024-024,2024-01-26,2024-01-30,Standard Class,Geetha Raman,Home Office,Mysuru,Karnataka,South,Office Supplies,Paper,Carbon Copy Paper Pack,70.0,4,0.0,28.0,70.0,1,2024
+ORD-2024-025,2024-01-27,2024-01-31,Second Class,Praveen Kumar,Consumer,Vizag,Andhra Pradesh,South,Technology,Monitors,LG 24 inch Full HD,750.0,1,0.0,225.0,750.0,1,2024
+ORD-2024-026,2024-01-28,2024-02-01,Standard Class,Sunita Yadav,Corporate,Patna,Bihar,East,Furniture,Chairs,Wooden Dining Chair Set,520.0,4,0.1,104.0,520.0,1,2024
+ORD-2024-027,2024-01-29,2024-02-02,First Class,Harish Nair,Consumer,Kozhikode,Kerala,South,Office Supplies,Storage,Drawer Organiser Set,55.0,3,0.0,22.0,55.0,1,2024
+ORD-2024-028,2024-01-30,2024-02-03,Standard Class,Padma Subramaniam,Home Office,Chennai,Tamil Nadu,South,Technology,Laptops,Asus VivoBook 15,950.0,1,0.0,285.0,950.0,1,2024
+ORD-2024-029,2024-01-31,2024-02-04,Second Class,Rajesh Khanna,Consumer,Indore,Madhya Pradesh,Central,Furniture,Bookcases,Kids Bookshelf Colourful,240.0,1,0.0,72.0,240.0,1,2024
+ORD-2024-030,2024-02-01,2024-02-05,First Class,Nithya Krishnan,Corporate,Bengaluru,Karnataka,South,Office Supplies,Binders,Ring Binder 4 inch,28.0,20,0.0,11.2,28.0,2,2024
+ORD-2024-031,2024-02-02,2024-02-06,Standard Class,Balaji Venkat,Consumer,Salem,Tamil Nadu,South,Technology,Accessories,USB-C Hub 7 Port,320.0,1,0.0,112.0,320.0,2,2024
+ORD-2024-032,2024-02-03,2024-02-07,Second Class,Sowmya Reddy,Home Office,Hyderabad,Telangana,South,Furniture,Tables,Folding Portable Table,195.0,2,0.15,-15.0,195.0,2,2024
+ORD-2024-033,2024-02-04,2024-02-08,First Class,Manoj Pillai,Corporate,Kochi,Kerala,South,Office Supplies,Paper,Colour Printer Paper A4,110.0,5,0.0,44.0,110.0,2,2024
+ORD-2024-034,2024-02-05,2024-02-09,Standard Class,Usha Menon,Consumer,Thrissur,Kerala,South,Technology,Phones,Realme 11 Pro,480.0,1,0.0,144.0,480.0,2,2024
+ORD-2024-035,2024-02-06,2024-02-10,Second Class,Ganesh Kumar,Corporate,Pune,Maharashtra,West,Furniture,Chairs,High Back Boss Chair,690.0,1,0.0,207.0,690.0,2,2024
+ORD-2024-036,2024-02-07,2024-02-11,First Class,Vijaya Lakshmi,Consumer,Tirunelveli,Tamil Nadu,South,Office Supplies,Storage,Wall Mount File Holder,75.0,2,0.0,30.0,75.0,2,2024
+ORD-2024-037,2024-02-08,2024-02-12,Standard Class,Karthik Raja,Home Office,Chennai,Tamil Nadu,South,Technology,Monitors,Samsung 32 inch Curved,1100.0,1,0.05,330.0,1100.0,2,2024
+ORD-2024-038,2024-02-09,2024-02-13,Second Class,Lalitha Devi,Consumer,Coimbatore,Tamil Nadu,South,Furniture,Bookcases,Bamboo Display Shelf,285.0,1,0.0,85.5,285.0,2,2024
+ORD-2024-039,2024-02-10,2024-02-14,Standard Class,Senthil Kumar,Corporate,Madurai,Tamil Nadu,South,Office Supplies,Binders,Presentation Portfolio,42.0,6,0.0,16.8,42.0,2,2024
+ORD-2024-040,2024-02-11,2024-02-15,First Class,Parvathi Nair,Consumer,Thiruvananthapuram,Kerala,South,Technology,Laptops,Dell Inspiron 15 3000,1050.0,1,0.0,315.0,1050.0,2,2024
+ORD-2024-041,2024-02-12,2024-02-16,Standard Class,Murugan Raj,Home Office,Vellore,Tamil Nadu,South,Furniture,Tables,Computer Desk with Drawer,420.0,1,0.1,84.0,420.0,2,2024
+ORD-2024-042,2024-02-13,2024-02-17,Second Class,Jayanthi Rajan,Consumer,Puducherry,Tamil Nadu,South,Office Supplies,Paper,Ruled Notebook Pack,48.0,8,0.0,19.2,48.0,2,2024
+ORD-2024-043,2024-02-14,2024-02-18,First Class,Balamurugan S,Corporate,Chennai,Tamil Nadu,South,Technology,Accessories,Webcam Full HD 1080p,890.0,1,0.0,267.0,890.0,2,2024
+ORD-2024-044,2024-02-15,2024-02-19,Standard Class,Chitra Selvam,Consumer,Erode,Tamil Nadu,South,Furniture,Chairs,Recliner Chair,1250.0,1,0.1,250.0,1250.0,2,2024
+ORD-2024-045,2024-02-16,2024-02-20,Second Class,Muthu Rajan,Home Office,Trichy,Tamil Nadu,South,Office Supplies,Storage,Iron Mesh Desk Organiser,88.0,3,0.0,35.2,88.0,2,2024
+ORD-2024-046,2024-02-17,2024-02-21,Standard Class,Saranya Devi,Consumer,Nagercoil,Tamil Nadu,South,Technology,Phones,Redmi Note 13 Pro,550.0,1,0.0,165.0,550.0,2,2024
+ORD-2024-047,2024-02-18,2024-02-22,First Class,Thilaga Ravi,Corporate,Bengaluru,Karnataka,South,Furniture,Bookcases,Industrial Pipe Bookshelf,490.0,1,0.05,122.5,490.0,2,2024
+ORD-2024-048,2024-02-19,2024-02-23,Standard Class,Kumaran Pillai,Consumer,Mumbai,Maharashtra,West,Office Supplies,Binders,Zipper Pouch Binder,32.0,15,0.0,12.8,32.0,2,2024
+ORD-2024-049,2024-02-20,2024-02-24,Second Class,Revathi Kumar,Home Office,Delhi,Delhi,North,Technology,Monitors,Acer 23.8 inch FHD,680.0,1,0.0,204.0,680.0,2,2024
+ORD-2024-050,2024-02-21,2024-02-25,First Class,Dhanasekar M,Consumer,Chennai,Tamil Nadu,South,Furniture,Tables,Foldable Dining Table,580.0,1,0.0,174.0,580.0,2,2024
